@@ -1,5 +1,12 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  for (let startindex = 0; startindex < word.length / 2; startindex++) {
+    const endindex = word.length - 1 - startindex;
+    if (word[startindex] !== word[endindex]) {
+      return false;
+    }
+  }
+  return true;
 }
 
 /* 
